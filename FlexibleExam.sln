@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleExam.Utility", "Fle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleExam.Model", "FlexibleExam.Model\FlexibleExam.Model.csproj", "{FA425F73-6BFE-4E84-98F2-AAB84FDE959E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexibleExam.DAL", "FlexibleExam.DAL\FlexibleExam.DAL.csproj", "{15096C00-05F8-4D27-8D7D-BBD1F7D719E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FA425F73-6BFE-4E84-98F2-AAB84FDE959E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA425F73-6BFE-4E84-98F2-AAB84FDE959E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA425F73-6BFE-4E84-98F2-AAB84FDE959E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15096C00-05F8-4D27-8D7D-BBD1F7D719E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15096C00-05F8-4D27-8D7D-BBD1F7D719E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15096C00-05F8-4D27-8D7D-BBD1F7D719E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15096C00-05F8-4D27-8D7D-BBD1F7D719E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

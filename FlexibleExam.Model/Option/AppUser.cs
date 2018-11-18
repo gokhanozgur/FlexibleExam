@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlexibleExam.Model
+namespace FlexibleExam.Model.Option
 {
     public enum Role
     {
