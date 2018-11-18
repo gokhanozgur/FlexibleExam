@@ -48,7 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppUser.cs" />
+    <Compile Include="Option\AppUser.cs" />
+    <Compile Include="Option\AssignedCourse.cs" />
+    <Compile Include="Option\AssignedExam.cs" />
+    <Compile Include="Option\Course.cs" />
+    <Compile Include="Option\CourseUnitOrSubject.cs" />
+    <Compile Include="Option\Exam.cs" />
+    <Compile Include="Option\ExamAnswerMarking.cs" />
+    <Compile Include="Option\ExamQuestion.cs" />
+    <Compile Include="Option\ExamQuestionAnswerOption.cs" />
+    <Compile Include="Option\ExamQuestionDistribution.cs" />
+    <Compile Include="Option\ExamResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

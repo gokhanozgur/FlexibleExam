@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="Entity\CoreEntity.cs" />
     <Compile Include="Entity\IEntity.cs" />
+    <Compile Include="Enum\ExamType.cs" />
+    <Compile Include="Enum\Semester.cs" />
     <Compile Include="Enum\Status.cs" />
     <Compile Include="Map\CoreMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

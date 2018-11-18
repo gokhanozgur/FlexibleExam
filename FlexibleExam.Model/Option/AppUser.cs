@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlexibleExam.Core.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace FlexibleExam.Model
         Manager = 5
     }
 
-    public class AppUser
+    public class AppUser:CoreEntity
     {
         public string Name { get; set; }
         public string LastName { get; set; }
