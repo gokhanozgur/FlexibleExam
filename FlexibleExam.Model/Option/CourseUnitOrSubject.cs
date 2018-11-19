@@ -9,13 +9,18 @@ namespace FlexibleExam.Model.Option
 {
     public class CourseUnitOrSubject:CoreEntity
     {
+        public Guid CourseID { get; set; }
 
         public string UnitOrSubject { get; set; }
 
         public short UnitNumber { get; set; }
 
-        public string Description { get; set; }
+        public string Description { get; set; }        
 
-        public Guid CourseID { get; set; }
+        public virtual Course Course { get; set; }
+
+        public virtual List<ExamQuestion> ExamQuestions { get; set; }
+
+        public virtual List<ExamQuestionDistribution> ExamQuestionDistributions { get; set; }
     }
 }

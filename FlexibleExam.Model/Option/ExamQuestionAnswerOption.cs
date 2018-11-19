@@ -9,12 +9,15 @@ namespace FlexibleExam.Model.Option
 {
     public class ExamQuestionAnswerOption:CoreEntity
     {
+        public Guid ExamQuestionID { get; set; }
 
         public string AnswerOption { get; set; }
 
-        public char OptionLetter { get; set; }
+        public char OptionLetter { get; set; }        
 
-        public Guid ExamQuestionID { get; set; }
+        public virtual ExamQuestion ExamQuestion { get; set; }
+
+        public virtual List<ExamAnswerMarking> ExamAnswerMarkings { get; set; }
 
     }
 }

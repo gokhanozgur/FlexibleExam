@@ -11,6 +11,7 @@ namespace FlexibleExam.Model.Option
     
     public class Exam:CoreEntity
     {
+        public Guid CourseID { get; set; }
 
         public Semester Semester { get; set; }
 
@@ -20,7 +21,15 @@ namespace FlexibleExam.Model.Option
 
         public short NumberOfTotalQuestion { get; set; }
 
-        public Guid CourseID { get; set; }
+        public virtual Course Course { get; set; }
+
+        public virtual List<AssignedExam> AssignedExams { get; set; }
+
+        public virtual List<ExamAnswerMarking> ExamAnswerMarkings { get; set; }
+
+        public virtual List<ExamQuestionDistribution> ExamQuestionDistributions { get; set; }
+
+        public virtual List<ExamResult> ExamResults { get; set; }
 
     }
 }

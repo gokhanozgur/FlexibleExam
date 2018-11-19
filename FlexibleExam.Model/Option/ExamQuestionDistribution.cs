@@ -10,13 +10,17 @@ namespace FlexibleExam.Model.Option
 {
     public class ExamQuestionDistribution:CoreEntity
     {
+        public Guid CourseUnitOrSubjectID { get; set; }
+
         public short NumberOfQuestion { get; set; }
 
         public Semester Semester { get; set; }
 
-        public Guid ExamID { get; set; }
+        public Guid ExamID { get; set; }        
 
-        public Guid CourseUnitOrSubjectID { get; set; }
+        public virtual Exam Exam { get; set; }
+
+        public virtual CourseUnitOrSubject CourseUnitOrSubject { get; set; }
 
     }
 }

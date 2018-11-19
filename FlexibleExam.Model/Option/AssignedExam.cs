@@ -10,14 +10,17 @@ namespace FlexibleExam.Model.Option
 {
     public class AssignedExam:CoreEntity
     {
-
-        public string IdentificationNumber { get; set; }
-
-        public Semester Semester { get; set; }
-
         public Guid ExamID { get; set; }
 
         public Guid AppUserID { get; set; }
+
+        public string IdentificationNumber { get; set; }
+
+        public Semester Semester { get; set; }        
+
+        public virtual AppUser AppUser { get; set; }
+
+        public virtual Exam Exam { get; set; }
 
     }
 }

@@ -27,16 +27,23 @@ namespace FlexibleExam.Model.Option
 
     public class ExamQuestion:CoreEntity
     {
-        
+        public Guid CourseID { get; set; }
+
+        public Guid CourseUnitOrSubjectID { get; set; }
+
         public string Question { get; set; }
 
         public short Unit { get; set; }
 
-        public Difficulty Difficulty { get; set; }
+        public Difficulty Difficulty { get; set; }        
 
-        public Guid CourseID { get; set; }
+        public virtual Course Course { get; set; }
 
-        public Guid CourseUnitOrSubjectID { get; set; }
+        public virtual CourseUnitOrSubject CourseUnitOrSubject { get; set; }
+
+        public virtual List<ExamAnswerMarking> ExamAnswerMarkings { get; set; }
+
+        public virtual List<ExamQuestionAnswerOption> ExamQuestionAnswerOptions { get; set; }
 
     }
 }

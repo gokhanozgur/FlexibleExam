@@ -1,6 +1,6 @@
 ﻿using FlexibleExam.Core.Entity;
 using FlexibleExam.Core.Enum;
-using FlexibleExam.Model;
+using FlexibleExam.Map.Option;
 using FlexibleExam.Model.Option;
 using FlexibleExam.Utility;
 using System;
@@ -25,7 +25,17 @@ namespace FlexibleExam.DAL.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
+            modelBuilder.Configurations.Add(new AppUserMap());
+            modelBuilder.Configurations.Add(new AssignedCourseMap());
+            modelBuilder.Configurations.Add(new AssignedExamMap());
+            modelBuilder.Configurations.Add(new CourseMap());
+            modelBuilder.Configurations.Add(new CourseUnitOrSubjectMap());
+            modelBuilder.Configurations.Add(new ExamAnswerMarkingMap());
+            modelBuilder.Configurations.Add(new ExamMap());
+            modelBuilder.Configurations.Add(new ExamQuestionAnswerOptionMap());
+            modelBuilder.Configurations.Add(new ExamQuestionDistributionMap());
+            modelBuilder.Configurations.Add(new ExamQuestionMap());
+            modelBuilder.Configurations.Add(new ExamResultMap());
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 

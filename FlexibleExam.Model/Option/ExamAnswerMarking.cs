@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace FlexibleExam.Model.Option
 {
     public class ExamAnswerMarking:CoreEntity
-    {
-        public Semester Semester { get; set; }
+    {       
 
         public Guid ExamID { get; set; }
 
@@ -18,7 +17,19 @@ namespace FlexibleExam.Model.Option
 
         public Guid AnswerOptionID { get; set; }
 
-        public Guid AppUserID { get; set; }      
+        public Guid AppUserID { get; set; }
+
+        public Semester Semester { get; set; }
+
+        public virtual Exam Exam { get; set; }
+
+        public virtual ExamQuestion ExamQuestion { get; set; }
+
+        public virtual ExamQuestionAnswerOption ExamQuestionAnswerOption { get; set; }
+
+        public virtual AppUser AppUser { get; set; }
+
+
 
     }
 }

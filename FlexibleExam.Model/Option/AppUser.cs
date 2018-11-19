@@ -42,5 +42,13 @@ namespace FlexibleExam.Model.Option
 
         public Role Role { get; set; }
 
+        public virtual List<AssignedCourse> AssignedCourses { get; set; }
+
+        public virtual List<AssignedExam> AssignedExams { get; set; }
+
+        public virtual List<ExamAnswerMarking> ExamAnswerMarkings { get; set; }
+
+        public virtual List<ExamResult> ExamResults { get; set; }
+
     }
 }

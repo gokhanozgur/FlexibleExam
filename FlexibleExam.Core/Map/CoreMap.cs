@@ -10,7 +10,6 @@ namespace FlexibleExam.Core.Map
 {
     public class CoreMap<T> : EntityTypeConfiguration<T> where T : CoreEntity
     {
-        // Fluent api nuget göremedim?
         public CoreMap()
         {
 
