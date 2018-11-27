@@ -17,7 +17,6 @@ namespace FlexibleExam.Map.Option
 
             ToTable("dbo.AssignedExams");
             Property(x => x.IdentificationNumber).HasMaxLength(100).IsRequired();
-            Property(x => x.Semester);
 
             // Table relations
 
@@ -34,6 +33,14 @@ namespace FlexibleExam.Map.Option
                 .WithMany(x => x.AssignedExams)
                 .HasForeignKey(x => x.ExamID)
                 .WillCascadeOnDelete(false);
+
+            // ExamSession Table Relation
+
+            HasRequired(x => x.ExamSession)
+                .WithMany(x => x.AssignedExams)
+                .HasForeignKey(x => x.ExamID)
+                .WillCascadeOnDelete(false);
+
         }
 
     }

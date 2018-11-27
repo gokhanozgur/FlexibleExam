@@ -59,6 +59,9 @@
     <Compile Include="Option\ExamQuestionDistributionMap.cs" />
     <Compile Include="Option\ExamQuestionMap.cs" />
     <Compile Include="Option\ExamResultMap.cs" />
+    <Compile Include="Option\ExamSessionMap.cs" />
+    <Compile Include="Option\LocationMap.cs" />
+    <Compile Include="Option\LocationRoomMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
