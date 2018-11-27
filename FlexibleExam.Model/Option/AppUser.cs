@@ -12,15 +12,15 @@ namespace FlexibleExam.Model.Option
     {
         [Display(Name = "Belirtilmiyor")]
         None = 0,
-        [Display(Name = "Administrator")]
+        [Display(Name = "Yönetici")]
         Administrator = 1,
-        [Display(Name = "Student")]
+        [Display(Name = "Öğrenci")]
         Student = 2,
-        [Display(Name = "Lecturer")]
+        [Display(Name = "Öğretim Görevlisi")]
         Lecturer = 3,
-        [Display(Name = "Coordinator")]
+        [Display(Name = "Koordinatör")]
         Coordinator = 4,
-        [Display(Name = "Manager")]
+        [Display(Name = "Yönetici")]
         Manager = 5
     }
 

@@ -59,6 +59,9 @@
     <Compile Include="Option\ExamQuestionAnswerOption.cs" />
     <Compile Include="Option\ExamQuestionDistribution.cs" />
     <Compile Include="Option\ExamResult.cs" />
+    <Compile Include="Option\ExamSession.cs" />
+    <Compile Include="Option\Location.cs" />
+    <Compile Include="Option\LocationRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

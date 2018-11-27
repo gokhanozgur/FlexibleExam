@@ -31,5 +31,7 @@ namespace FlexibleExam.Model.Option
 
         public virtual List<ExamResult> ExamResults { get; set; }
 
+        public virtual List<ExamSession> ExamSessions { get; set; }
+
     }
 }

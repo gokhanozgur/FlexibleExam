@@ -14,13 +14,15 @@ namespace FlexibleExam.Model.Option
 
         public Guid AppUserID { get; set; }
 
-        public string IdentificationNumber { get; set; }
+        public Guid ExamSessionID { get; set; }
 
-        public Semester Semester { get; set; }        
+        public string IdentificationNumber { get; set; } 
 
         public virtual AppUser AppUser { get; set; }
 
         public virtual Exam Exam { get; set; }
+
+        public virtual ExamSession ExamSession { get; set; }
 
     }
 }
