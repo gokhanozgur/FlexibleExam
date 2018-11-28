@@ -51,6 +51,7 @@
     <Compile Include="Option\AppUser.cs" />
     <Compile Include="Option\AssignedCourse.cs" />
     <Compile Include="Option\AssignedExam.cs" />
+    <Compile Include="Option\AssignedSessionStaff.cs" />
     <Compile Include="Option\Course.cs" />
     <Compile Include="Option\CourseUnitOrSubject.cs" />
     <Compile Include="Option\Exam.cs" />

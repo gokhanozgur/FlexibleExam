@@ -15,15 +15,15 @@ namespace FlexibleExam.Core.Enum
         [Display(Name = "Ara Sınav")]
         Midterm = 1,
         [Display(Name = "Ara Sınav Mazeret")]
-        Midterm_Make_Up = 3,
+        MidtermMakeUp = 3,
         [Display(Name = "Final")]
         Final = 4,
         [Display(Name = "Bütünleme")]
-        Make_Up = 5,
+        MakeUp = 5,
         [Display(Name = "Tek Ders ve Not Yükseltme")]
-        Single_Course_Exams = 6,
+        SingleCourseExams = 6,
         [Display(Name = "Seviye Belirleme")]
-        Placement_Test = 7,
+        PlacementTest = 7,
 
     }
 }

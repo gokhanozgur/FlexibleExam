@@ -39,6 +39,7 @@ namespace FlexibleExam.DAL.Context
             modelBuilder.Configurations.Add(new LocationMap());
             modelBuilder.Configurations.Add(new LocationRoomMap());
             modelBuilder.Configurations.Add(new ExamSessionMap());
+            modelBuilder.Configurations.Add(new AssignedSessionStaffMap());
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
@@ -73,6 +74,8 @@ namespace FlexibleExam.DAL.Context
         public DbSet<LocationRoom> LocationRooms { get; set; }
 
         public DbSet<ExamSession> ExamSessions { get; set; }
+
+        public DbSet<AssignedSessionStaff> AssignedSessionStaffs { get; set; }
 
 
         public override int SaveChanges()

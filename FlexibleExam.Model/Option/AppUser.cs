@@ -21,7 +21,11 @@ namespace FlexibleExam.Model.Option
         [Display(Name = "Koordinatör")]
         Coordinator = 4,
         [Display(Name = "Yönetici")]
-        Manager = 5
+        Manager = 5,
+        [Display(Name = "Oturum Yöneticisi")]
+        SessionSupervisor = 6,
+        [Display(Name = "Oturum Yönetici Yardımcısı")]
+        SessionSupervisorAssistant = 7,
     }
 
     public class AppUser:CoreEntity
@@ -49,6 +53,9 @@ namespace FlexibleExam.Model.Option
         public virtual List<ExamAnswerMarking> ExamAnswerMarkings { get; set; }
 
         public virtual List<ExamResult> ExamResults { get; set; }
+
+        public virtual List<AssignedSessionStaff> AssignedSessionStaffs { get; set; }
+
 
     }
 }
