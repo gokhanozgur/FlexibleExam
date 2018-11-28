@@ -60,6 +60,13 @@ namespace FlexibleExam.Map.Option
                 .HasForeignKey(x => x.AppUserID)
                 .WillCascadeOnDelete(false);
 
+            // AssignedSessionStaff Table Relation
+
+            HasMany(x => x.AssignedSessionStaffs)
+                .WithRequired(x => x.AppUser)
+                .HasForeignKey(x => x.AppUserID)
+                .WillCascadeOnDelete(false);
+
         }
 
     }

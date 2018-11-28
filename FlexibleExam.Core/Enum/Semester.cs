@@ -12,10 +12,10 @@ namespace FlexibleExam.Core.Enum
         [Display(Name = "Belirtilmiyor")]
         None = 0,
         [Display(Name = "Güz")]
-        Fall_Semester = 1,
+        FallSemester = 1,
         [Display(Name = "Bahar")]
-        Spring_Term = 2,
+        SpringTerm = 2,
         [Display(Name = "Yaz")]
-        Summer_School = 3,
+        SummerSchool = 3,
     }
 }

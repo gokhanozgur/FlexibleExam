@@ -28,5 +28,8 @@ namespace FlexibleExam.Model.Option
         public virtual LocationRoom LocationRoom { get; set; }
 
         public virtual List<AssignedExam> AssignedExams { get; set; }
+
+        public virtual List<AssignedSessionStaff> AssignedSessionStaffs { get; set; }
+
     }
 }

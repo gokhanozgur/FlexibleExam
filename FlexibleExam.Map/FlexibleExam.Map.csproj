@@ -51,6 +51,7 @@
     <Compile Include="Option\AppUserMap.cs" />
     <Compile Include="Option\AssignedCourseMap.cs" />
     <Compile Include="Option\AssignedExamMap.cs" />
+    <Compile Include="Option\AssignedSessionStaffMap.cs" />
     <Compile Include="Option\CourseMap.cs" />
     <Compile Include="Option\CourseUnitOrSubjectMap.cs" />
     <Compile Include="Option\ExamAnswerMarkingMap.cs" />
